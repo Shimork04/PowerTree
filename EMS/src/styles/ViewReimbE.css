@@ -1,0 +1,124 @@
+/* ViewReimbE.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2.text-center {
+  color: black; /* Orange color for the heading */
+}
+
+.filters-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.filters-container .dropdown {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tablevre-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.tablevre {
+  font-size: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tablevre th, .tablevre td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.tablevre th {
+  background-color: #ff7f00; /* Orange for the table headers */
+  color: white;
+  padding: 15px;
+}
+
+.tablevre td {
+  padding: 12px;
+}
+
+.btn-vw {
+  background-color: black; /* Orange for vw buttons */
+  color: white;
+  border: none;
+}
+
+.btn-vw:hover {
+  background-color: #ff7f00; /* Darker shade of orange on hover */
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    padding: 10px;
+  }
+
+  .tablevre th, .tablevre td {
+    padding: 8px;
+  }
+
+  .btn-vw {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h2.text-center {
+    font-size: 1.5em;
+  }
+
+  .tablevre th, .tablevre td {
+    padding: 6px;
+  }
+
+  .btn-vw {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media print {
+  .pdf-card {
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .pdf-card-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .pdf-card-content {
+    font-size: 0.9em;
+  }
+
+  .pdf-total-expense {
+    page-break-before: always;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}

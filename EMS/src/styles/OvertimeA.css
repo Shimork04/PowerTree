@@ -1,0 +1,128 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .overtime-container {
+    width: 60%; /* Reduced width */
+    margin: 50px auto;    
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+    .header-overtime{
+        background: linear-gradient(90deg, #000000, #ff7f00);
+        color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-overtime-container{
+        padding: 20px;
+      }
+  
+ 
+  
+  /* Form Styles */
+  .form-sectionota {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-groupota {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  
+  .form-groupota label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-groupota select,
+  .form-groupota input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-groupota button {
+    width: 35%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .form-groupota button:hover {
+    background-color: #ff7f00;
+  }
+  
+  /* tableota Styles */
+
+  .tableota-container {
+    overflow-x: auto;
+  }
+  
+  .tableota {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .tableota th,
+  .tableota td {
+    padding: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .tableota th {
+    background-color: #ff7f00;
+    color: white;
+  }
+  
+  .tableota tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .total-overtime {
+    background-color: #ff7f00;
+    color: white;
+    padding: auto;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Error and Loading Styles */
+  .error {
+    color: #f44336;
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #ff7f00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-groupota {
+      flex: 1 1 100%;
+    }
+  }
+  

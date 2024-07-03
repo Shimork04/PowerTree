@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .containerpa {
+    padding: 20px;
+  }
+  
+  .cardpa {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .cardpa-header {
+    background: linear-gradient(90deg, #000000, #ff7f00);
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .cardpa-header h2 {
+    margin: 0;
+  }
+  
+  .cardpa-body {
+    padding: 20px;
+  }
+  
+  .form-group-pa label {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  b {
+    color: #ff7f00; /* Orange color for labels */
+  }
+  
+  .form-group-pa label b {
+    font-weight: bold;
+    color: #ff7f00; /* Orange color for labels */
+  }
+  
+  .mt-5 {
+    margin-top: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .containerpa {
+      padding: 10px;
+    }
+  
+    .cardpa-body {
+      padding: 15px;
+    }
+  
+    .form-group-pa label {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cardpa-header h2 {
+      font-size: 1.5em;
+    }
+  
+    .form-group-pa label {
+      font-size: 0.9em;
+    }
+  }
+  

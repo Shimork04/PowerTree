@@ -1,0 +1,164 @@
+/* ManageClient.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#manage-client-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;  
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2.text-center {
+  color: black; /* Orange color for the heading */
+}
+
+.buttonmc-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Margin between buttonmcs and tablemce */
+}
+
+.manage-buttonmc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  background-color: #ff7f00; /* Orange color for buttonmc */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 14px; /* Font size */
+  white-space: nowrap; /* Prevent buttonmc text from wrapping */
+}
+
+.manage-buttonmc i {
+  font-size: 20px; /* Icon size */
+  margin-right: 5px; /* Margin between icon and text */
+}
+
+.manage-buttonmc:hover {
+  background-color: black; /* Hover color */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.cardmce {
+  border: 1px solid #dfdfdf;
+  border-radius: 8px; 
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 90%;
+  max-width: 1000px; 
+  margin: 0 auto; 
+
+}
+
+.cardmce-header {
+  background: linear-gradient(90deg, #000000, #ff7f00); /* Orange gradient for cardmce header */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+}
+
+.cardmce-body {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;;
+}
+
+.tablemce-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.tablemce {
+  font-size: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tablemce th,
+.tablemce td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+.tablemce th {
+  background-color: #ff7f00; /* Orange for tablemce headers */
+  color: white;
+  padding: 8px;
+}
+
+.tablemce td {
+  padding: 5px;
+}
+
+.btn-orange{
+  background-color: #ff7f00; /* Orange color for buttonmc */
+  color: white;
+  cursor: pointer;
+}
+
+.btn-orange:hover {
+  background-color: black; /* Hover color */
+  color: white;
+}
+
+.btn-black{
+  background-color: black; /* Orange color for buttonmc */
+  color: white;
+  cursor: pointer;
+}
+
+.btn-black:hover {
+  background-color: #ff7f00; /* Hover color */
+  color: white;
+}
+
+.tablemce tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row color */
+}
+
+.tablemce tbody tr:hover {
+  background-color: #f1f1f1; /* Hover color */
+}
+
+@media (max-width: 768px) {
+  .cardmce {
+    padding: 5px;
+  }
+
+  .tablemce th, .tablemce td {
+    padding: 5px;
+  }  
+}
+
+@media (max-width: 576px) {
+  h2.text-center {
+    font-size: 1.5em;
+  }
+
+  .tablemce th, .tablemce td {
+    padding: 5px;
+  }
+
+  
+}
